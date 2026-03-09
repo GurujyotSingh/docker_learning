@@ -12,3 +12,11 @@ docker rmi IMAGE_ID
 docker rm CONT_ID
 
 docker pull mysql:8.0
+
+# Port Binding
+docker run -d -e MYSQL_ROOT_PASSWORD=password --name mysql-latest -p8080:3306 mysql
+
+# Docker 
+docker logs CONT_ID
+docker exec -it CONTID /bin/bash
+docker exec -it Contid /bin/sh
